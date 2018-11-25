@@ -50,7 +50,7 @@ $helper = $this->helper('\Alexander\Extension\Helper\Data');
                 <?= /* @escapeNotVerified */ ($iterator++ == 1) ? '<li class="item product product-item">' : '</li><li class="item product product-item">' ?>
                 <div class="product-item-info" data-container="product-<?= /* @escapeNotVerified */ $viewMode ?>">
 
-<ol style="list-style-type: none">
+<ol style="list-style-type: none; position: absolute; z-index: 10000">
 <?php if($helper->getCssClass($_product->getId())): ?>
 <?php foreach ($helper->getCssClass($_product->getId()) as $attribute): ?>
    <li>

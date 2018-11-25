@@ -20,7 +20,7 @@ $_product = $objectManager->get('Magento\Framework\Registry')->registry('current
 
 <div class="customDiv">
 
-<ol id="ol" style="list-style-type: none; position: absolute;">
+<ol id="ol" style="list-style-type: none; position: absolute; z-index: 10000">
 
 <?php if($helper->getCssClass($_product->getId())): ?>
 <?php foreach ($helper->getCssClass($_product->getId()) as $attribute): ?>
