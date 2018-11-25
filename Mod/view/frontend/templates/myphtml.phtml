@@ -1,0 +1,51 @@
+<?php
+?>
+
+<?= "qwer " ?>
+
+<p id="nnn">qwertyuiopiiutdrrsetrdh</p>
+<p id="sec">qwertyuiopiiutdrrsetrdh</p>
+<div id="phtml"></div>
+
+<div id="footer" data-bind = "scope : 'compo'">
+	<!-- ko template:getTemplate() --><!-- /ko -->
+</div>
+
+<script>
+	requirejs(['Alexander_Mod/js/first'], function(fifa) {
+		console.log(fifa)
+	})
+</script>
+
+<script type="text/x-magento-init">
+{
+	"#sec" : {
+		"Alexander_Mod/js/third":
+		{
+			"key": "<?= "qwerty!!!ytrewq" ?>"
+		}
+	}
+}
+</script>
+
+<script type="text/x-magento-init">
+	{
+		"*" : {
+     		"Magento_Ui/js/core/app" : {
+     			"components" :{
+     				"compo" : {
+     					"component" : "Alexander_Mod/js/template",	
+			     		"template" : "Alexander_Mod/html"
+     				}
+     			}
+     		}
+		}
+	}
+</script>
+
+
+<?= $block->htm();
+?>
+
+
+

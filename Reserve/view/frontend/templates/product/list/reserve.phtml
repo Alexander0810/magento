@@ -1,0 +1,24 @@
+<?= $block->getProduct()->getName() ?>
+<?= $block->getProduct()->getId() ?>
+
+<div data-bind = "scope : 'reserve_<?= $block->getProduct()->getId() ?>'">
+	<!-- ko template:getTemplate() --><!-- /ko -->
+</div>
+<script type="text/x-magento-init">
+{ 
+	"*" : {
+		"Magento_Ui/js/core/app" : {
+			"components" :{
+				"reserve_<?= $block->getProduct()->getId() ?>" : {
+					"component" : "Alexander_Reserve/js/reserve",
+					"template" : "Alexander_Reserve/reserve",
+					"config" : {
+						"timeLeft" : <?= $block->getTime() ?>,
+						"product_id" : <?= $block->getProduct()->getId() ?>
+				    }
+				}
+			}
+		}
+	}
+}
+</script>

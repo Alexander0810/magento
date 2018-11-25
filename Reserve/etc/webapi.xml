@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+    <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+
+    <route url="/V1/alexander_reserve" method="POST">
+        <service class="Alexander\Reserve\Api\ReserveInterface" method="save"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <route url="/V1/alexander_reserve_time" method="POST">
+        <service class="Alexander\Reserve\Api\ReserveInterface" method="timeleft"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+</routes>

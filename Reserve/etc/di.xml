@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Alexander\Reserve\Api\ReserveInterface" type="Alexander\Reserve\Model\ReserveApi"></preference> 
+
+	<type name="Magento\Catalog\Model\Product">
+		<plugin name="alexander_reserve" type="Alexander\Reserve\Plugin\Reserve"/>
+	</type>
+
+</config>
+
+

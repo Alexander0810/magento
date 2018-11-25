@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="category.product.addto">
+	  		<block class="Alexander\Reserve\Block\Product\ProductList\Item\Reserve"
+                name="category.product.reserve" as="reserve"
+                template="Alexander_Reserve::product/list/reserve.phtml"/>
+		</referenceBlock>
+    </body>
+</page>
+
+

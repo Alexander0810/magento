@@ -1,0 +1,44 @@
+   .customDiv {
+        position    : relative;    
+   }
+
+   .product-item-info {
+        position    : relative;
+    }
+
+    .style-sale {
+        color           : black;
+        font            : bold 24px/45px Helvetica, Sans-Serif;
+        font-size       : 1em; 
+        letter-spacing  : -1px;
+        background      : blue;
+        padding         : 2px;
+    }
+    .attribute-sale {
+            /*position    : absolute;*/
+            z-index     : 10000;
+    }
+    .style-free-shipping {
+        color           : black;
+        font            : bold 24px/45px Helvetica, Sans-Serif;
+        font-size       : 1em;
+        letter-spacing  : -1px;
+        background      : yellow;
+        padding         : 2px;
+    }
+    .attribute-free-shipping {
+            /*position    : absolute;*/
+            z-index     : 10000;
+    }
+    .style-best-seller {
+        color           : black;
+        font            : bold 24px/45px Helvetica, Sans-Serif;
+        font-size       : 1em;
+        letter-spacing  : -1px;
+        background      : green;
+        padding         : 2px;
+    }    
+    .attribute-best-seller {
+            /*position    : absolute;*/
+            z-index     : 10000;
+    }

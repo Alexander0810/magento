@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Alexander\Mod\Api\MyInterface" type="Alexander\Mod\Model\MyWebApi"></preference> 
+    <preference for="Alexander\Mod\Api\CssInterface" type="Alexander\Mod\Model\CssApi"></preference> 
+
+
+
+<!-- 	<type name="Magento\Theme\Block\Html\Header">
+		<plugin name="alexander_mod_rename" type="Alexander\Mod\Plugin\Rename">	
+
+		</plugin>
+	</type>
+ -->
+
+
+	<type name="Magento\Framework\Pricing\Render\Amount">
+ 		<plugin name="alexander_mod_rewrite" type="\Alexander\Mod\Plugin\Rewrite"/>
+ 		<plugin name="alexander_mod_rep" type="\Alexander\Mod\Plugin\Rep"/>
+	</type>
+
+
+
+	<type name="Magento\Customer\Model\Data\Customer">
+ 		<plugin name="alexander_mod_reemail" type="\Alexander\Mod\Plugin\Reemail"/>
+	</type>
+
+
+<!-- 	<type name="Magento\Catalog\Helper\Output">
+ 		<plugin name="alexander_mod_re" type="\Alexander\Mod\Plugin\Re"/>
+	</type>
+ -->
+
+
+	<type name="Alexander\Mod\Plugin\Rename">
+		<arguments>
+			<argument name = "string" xsi:type="string">
+				aaaaaaaaaaa
+			</argument>
+		</arguments>
+	</type>
+
+<type name="Alexander\Mod\Block\MyClass">
+	<arguments>
+		<argument name="helper" xsi:type="object">
+           Alexander\Mod\Helper\Tryq
+		</argument>
+	</arguments>
+</type>
+</config>
+
+
+
+
