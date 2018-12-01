@@ -14,6 +14,7 @@ class Reserve extends \Magento\Catalog\Block\Product\ProductList\Item\Block
 	){
 		parent::__construct($context, $data = []);
 		$this->_collectionFactory = $collectionFactory;
+		$this->_helper = $helper;
 	}
 	
 	public function getTime(){

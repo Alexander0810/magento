@@ -2,24 +2,31 @@ define(['uiComponent', 'jquery', 'ko'], function(ui, $, ko){
 
 	var reservationStatus = {};
 	var buttonStatus = {};
+	var enableStatus = {};
 
 	return ui.extend({
-		getEnable: ko.observable(true), 
 		myTimer: ko.observable(45),
 
 		showButton: function(value) {
 			if(value === true || value === false){
-				buttonStatus[self.product_id](value)
+				buttonStatus[this.product_id](value)
 			}   else {
-					return buttonStatus[self.product_id];
+					return buttonStatus[this.product_id];
+				}; 
+		},
+		getEnable: function(value) {
+			if(value === true || value === false){
+				enableStatus[this.product_id](value)
+			}   else {
+					return enableStatus[this.product_id];
 				}; 
 		},
 
 		showTimer: function(value) {
 			if(value === true || value === false){
-				reservationStatus[self.product_id](value)
+				reservationStatus[this.product_id](value)
 			}   else {
-					return reservationStatus[self.product_id];
+					return reservationStatus[this.product_id];
 				}; 
 		},
 

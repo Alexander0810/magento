@@ -21,6 +21,7 @@ Class MyClass extends \Magento\Framework\View\Element\Template
 	}
 
 	public function htm () {
+
 		// $this->temptableu
 		// ->setProductId(3)
 		// ->setPackId(1)
