@@ -29,6 +29,14 @@ define(['uiComponent', 'jquery', 'ko', 'Magento_Ui/js/modal/modal'], function(ui
 									})
 		                    this.closeModal(); // This button closes the modal
 		                }
+          		  	},
+
+          		  	{ // Add array of buttons within the modal if you need.
+		            text: $.mage.__('Cancel'),
+		            class: '',
+		            click: function () {
+		                    this.closeModal(); // This button closes the modal
+		                }
           		  	}]
      			};
 
