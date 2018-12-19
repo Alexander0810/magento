@@ -1,4 +1,4 @@
-define(['uiComponent', 'jquery', 'ko'], function(ui, $, ko){
+define(['uiComponent', 'jquery', 'ko', 'Magento_Ui/js/modal/modal'], function(ui, $, ko, modal){
 
 	var reservationStatus = {};
 	var buttonStatus = {};

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+
+        <add id="Alexander_Mod::myroute" title="backcall" module="Alexander_Mod" parent="Magento_Backend::marketing_communications" action="alexander_new_route" sortOrder="51" resource="Magento_Backend::marketing_communications"/>
+
+    </menu>
+</config>

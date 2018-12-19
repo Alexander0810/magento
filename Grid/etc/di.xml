@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+	<preference for="Alexander\Grid\Api\ReserveInterface" type="Alexander\Grid\Model\ReserveApi"></preference> 
+
+
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="my_data_source" xsi:type="string">Alexander\Grid\Model\ResourceModel</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Alexander\Grid\Model\ResourceModel" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">callback</argument>
+            <argument name="resourceModel" xsi:type="string">Alexander\Grid\Model\ResourceModel\Grid</argument>
+        </arguments>
+    </virtualType>
+
+
+
+</config>
+
+
+
+

@@ -8,7 +8,7 @@ class Index extends \Magento\Framework\App\Action\Action
 		$this->_request = $request;
 	}
 
-	public function execute(\Magento\Framework\Event\Observer $observer)){
+	public function execute(){
 		$handle = $this->_request->getFullActionName();
 		die($handle);
 	}
