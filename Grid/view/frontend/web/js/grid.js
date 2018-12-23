@@ -8,6 +8,7 @@ define(['uiComponent', 'jquery', 'ko', 'Magento_Ui/js/modal/modal'], function(ui
 		            text: $.mage.__('Submit & Continue'),
 		            class: '',
 		            click: function () {
+
            				var username = document.getElementById('input_name').value;
 						var userphone = document.getElementById('input_phone').value;
 
@@ -40,10 +41,11 @@ define(['uiComponent', 'jquery', 'ko', 'Magento_Ui/js/modal/modal'], function(ui
 	return ui.extend({
     	
 		reserve: function() {
-		            $('#modal-content').modal('openModal');
+		    $('#modal-content').modal('openModal');
 	   	},
 
 	   	isVisible: function() {
+
 		    var popup = modal(options, $('#modal-content'));
   		   	return true;
 	   	},

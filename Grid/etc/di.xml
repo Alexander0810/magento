@@ -4,7 +4,6 @@
 
 	<preference for="Alexander\Grid\Api\ReserveInterface" type="Alexander\Grid\Model\ReserveApi"></preference> 
 
-
     <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
         <arguments>
             <argument name="collections" xsi:type="array">
