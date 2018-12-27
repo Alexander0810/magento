@@ -22,6 +22,11 @@ class Cart
     		}
     	}
 
+// $collection = $subject->getQuote()->getItemsCollection();
+//         foreach ($collection as $item) {
+//             var_dump($item);
+//         }
+// die;
 		$collection = $subject->getQuote()->getItemsCollection();
      	if ($collection->getSize() >1) {
      		return $subject;

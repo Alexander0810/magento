@@ -10,5 +10,3 @@ interface ReserveInterface {
 	 */
 	public function save($name, $phone);
 }
-
-//params - text ????

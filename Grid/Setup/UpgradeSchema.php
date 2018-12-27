@@ -11,8 +11,7 @@ public function upgrade(
     $installer->startSetup();
  
     if(version_compare($context->getVersion(), '0.0.3', '<')) {
-// 		echo get_class($installer->getConnection()->changeTable());
-// die;
+
         $installer->getConnection()
 		->changeColumn(
 			    'callback', 

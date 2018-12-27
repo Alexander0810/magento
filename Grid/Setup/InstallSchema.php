@@ -36,13 +36,6 @@ Class InstallSchema implements \Magento\Framework\Setup\InstallSchemaInterface
             'default' => null,
             ]    
         )
-        // ->addColumn(
-        //     'seen',
-        //     \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
-        //     null,
-        //     [
-        //     'default' => 'not seen',
-        //     ]    
         ->addColumn(
             'seen',
             \Magento\Framework\DB\Ddl\Table::TYPE_BOOLEAN,

@@ -1,10 +1,10 @@
 
 define(['uiComponent', 'jquery', 'ko', 'Magento_Ui/js/modal/modal'], function(ui, $, ko, modal){
 				var options = {
-		        type: 'popup', // popup or slide
+		        type: 'popup', 
         		responsive: true, // true = on smaller screens the modal slides in from the right
 		        title: 'Input Data to Callback',
-		        buttons: [{ // Add array of buttons within the modal if you need.
+		        buttons: [{ 
 		            text: $.mage.__('Submit & Continue'),
 		            class: '',
 		            click: function () {
@@ -26,15 +26,15 @@ define(['uiComponent', 'jquery', 'ko', 'Magento_Ui/js/modal/modal'], function(ui
 										//
 									}
 								})
-			                    this.closeModal(); // This button closes the modal
+			                    this.closeModal(); 
 			                }
 	          		  	},
 
-          		  		{ // Add array of buttons within the modal if you need.
+          		  		{ 
 			    	        text: $.mage.__('Cancel'),
 				            class: '',
 			        	    click: function () {
-		                    this.closeModal(); // This button closes the modal
+		                    this.closeModal(); 
 		                }
           		  	}]
      			};
