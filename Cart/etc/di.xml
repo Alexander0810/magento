@@ -8,6 +8,18 @@
 </type>
 
 
+<type name="Magento\Framework\Pricing\Price\Pool">
+	<arguments>
+		<argument name="prices" xsi:type="array">
+			<item name="my_price" xsi:type="string">Alexander\Cart\Prices\Price</item>
+		</argument>
+	</arguments>
+</type>
+
+
+
+
+
 </config>
 
 

@@ -12,21 +12,20 @@ class Cart
 
 	    public function aroundAddProduct($subject, $proceed, $productInfo, $requestInfo = null)
     {
+// $requestInfo - LOOK (or $productInfo)
+//     	$this->orders = $this->_orderCollectionFactory->create()->addFieldToSelect('*');
+// // -> addFieldToFilter('', 'value')
 
-    	$this->orders = $this->_orderCollectionFactory->create()->addFieldToSelect('*');
-
-    	foreach ($this->orders as $orderItem) {
-    		$label = $orderItem->getStatusLabel();
-    		if ($label == 'Pending') {
-    			$count++;
-    		}
-    	}
-
-// $collection = $subject->getQuote()->getItemsCollection();
-//         foreach ($collection as $item) {
-//             var_dump($item);
-//         }
+//     	foreach ($this->orders as $orderItem) {
+//     		$label = $orderItem->getStatusLabel();
+//     		if ($label == 'Pending') {
+//     			$count++;
+//     		}
+//     	}
+// var_dump($count);
 // die;
+
+
 		$collection = $subject->getQuote()->getItemsCollection();
      	if ($collection->getSize() >1) {
      		return $subject;
