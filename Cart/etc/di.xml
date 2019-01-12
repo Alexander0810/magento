@@ -2,6 +2,11 @@
 
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
 
+    <!-- <preference for="Alexander\Cart\Api\CartInterface" type="Alexander\Cart\Model\CartApi"></preference>  -->
+
+
+
+
 <type name="Magento\Checkout\Model\Cart">
         <plugin name="alexander_cart_restrict" type="Alexander\Cart\Plugin\Cart"/> 
         <!-- </plugin> -->

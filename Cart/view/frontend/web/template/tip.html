@@ -1,0 +1,21 @@
+<!-- <div id="tooltip" title="TOOLTIPSTER" data-bind="visible : isVisible()" style="display:inline; color: red;">
+	<p>TOUCH ME!!!!!</p>
+</div>
+
+<p data-bind="text: userId">?!</p>
+ -->
+
+
+<div id="tooltip" data-tooltip-content = "#tooltip_content" data-bind="visible : isVisible()" style="display:inline; color: red;">
+	<p style="display: inline;">TOUCH ME PLEASE!!!!!</p>
+</div>
+
+
+<div class = "tooltip_templates" style="display: none;"> 
+	<span id = "tooltip_content"> 
+		<!-- <p>Your User ID is</p> -->
+		<p class="classcss" data-bind="text: userId"></p>	
+	</span> 
+</div>
+
+

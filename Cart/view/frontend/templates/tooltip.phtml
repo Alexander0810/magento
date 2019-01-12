@@ -1,0 +1,19 @@
+<div data-bind="scope : 'my_component_tooltip'">
+<!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+	{
+		"*" : {
+			"Magento_Ui/js/core/app" : {
+				"components" : {
+					"my_component_tooltip" : {
+						"component" : "Alexander_Cart/js/tip",
+						"template" : "Alexander_Cart/tip"
+					}
+				}
+			}
+		}
+	}
+
+</script>

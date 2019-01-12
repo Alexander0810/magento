@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:helloworld:Magento_Widget:etc/widget.xsd">
+	<widget class="Magento\Framework\View\Element\Template" id="alex_mywidget">
+		<label>Alexander Widget</label>
+		<description>my description</description>
+		<parameters>
+			<parameter name="first_parametr" sort_order="10" visible="true" xsi:type="text">
+				<label>Label first parametr</label>
+			</parameter>
+			<parameter name="second_parametr" sort_order="20" visible="true" xsi:type="text">
+				<label>Label second parametr</label>
+			</parameter>
+
+			<parameter name="template" sort_order="20" visible="true" xsi:type="select">
+				<label>Template parametr</label>
+					<options>
+						<option name="default_1" value="Alexander_Cart::widget/mywidget.phtml" selected="true">
+							<label translate="true">My first Template</label>
+						</option>
+						<option name="default_2" value="Alexander_Cart::widget/mywidget_new.phtml" selected="false">
+							<label translate="true">My second Template</label>
+						</option>
+					</options>
+			</parameter>
+
+		</parameters>
+	</widget>
+</widgets>
