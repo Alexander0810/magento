@@ -4,9 +4,6 @@
 
     <!-- <preference for="Alexander\Cart\Api\CartInterface" type="Alexander\Cart\Model\CartApi"></preference>  -->
 
-
-
-
 <type name="Magento\Checkout\Model\Cart">
         <plugin name="alexander_cart_restrict" type="Alexander\Cart\Plugin\Cart"/> 
         <!-- </plugin> -->
@@ -20,6 +17,23 @@
 		</argument>
 	</arguments>
 </type>
+
+<virtualType name="anotherHelperName" type="Alexander\Cart\Helper\Myhelper">
+	<arguments>
+		<argument name="str" xsi:type="string">Anotherstring</argument>
+	</arguments>
+</virtualType>
+
+
+
+<type name="Alexander\Cart\Controller\Index\Index">
+	<arguments>
+		<argument name="anotherhelper" xsi:type="object">anotherHelperName</argument>
+	</arguments>
+</type>
+
+
+
 
 
 
